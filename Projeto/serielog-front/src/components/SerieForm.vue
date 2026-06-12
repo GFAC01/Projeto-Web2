@@ -30,7 +30,7 @@
 
 <template>
 
-    <form @submit.prevent = "enviarFormulario">
+    <form @submit.prevent = "enviarFormulario" class="cardForm">
 
         <p>Título: <input v-model="titulo"></p>
 
@@ -40,9 +40,9 @@
 
         <p>Ano: <input type="number" v-model="ano"></p>
 
-        <p><input type="checkbox" v-model="assistida">Assistida</p>
+        <p><input type="checkbox" v-model="assistida"> Assistida</p>
 
-        <button type="submit">Salvar</button>
+        <button type="submit" class="btn-salvar">Salvar</button>
     </form>
 
 </template>
