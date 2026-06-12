@@ -16,8 +16,9 @@
 </script>
 
 <template>
-    <h1>Nova Série</h1>
-
-    <SerieForm @salvar="salvarSerie"/>
+    <h1 class="top">Nova Série</h1>
+    <div class="form">
+        <SerieForm @salvar="salvarSerie"/>
+    </div>
     
 </template>
