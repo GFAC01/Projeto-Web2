@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <nav>
+  <nav class="top" id="top">
     <RouterLink to="/">Séries</RouterLink>
     |
     <RouterLink to="/series/nova">Nova Série</RouterLink>
