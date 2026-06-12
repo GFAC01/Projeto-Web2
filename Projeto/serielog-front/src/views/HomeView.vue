@@ -43,13 +43,15 @@
 </script>
 
 <template>
+    <div class="top">
+        <h1>Minhas Séries</h1>
+        <FiltroSeries @filtrar="aplicarFiltro"/>
+    </div>
 
-    <h1>Minhas Séries</h1>
+    <br>
 
-    <FiltroSeries @filtrar="aplicarFiltro"/>
-
-    <SerieCard v-for="serie in seriesFiltradas" :key="serie.id" :serie="serie" @remover="removerSerie" />
-
-    <hr>
+    <div class="catalogo">
+        <SerieCard v-for="serie in seriesFiltradas" :key="serie.id" :serie="serie" @remover="removerSerie" />
+    </div>
 
 </template>
