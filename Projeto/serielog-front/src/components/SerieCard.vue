@@ -10,7 +10,7 @@ function removerSerie() {
 </script>
 
 <template>
-    <div>
+    <div class="cardSerie">
 
         <h2> {{ serie.titulo }} </h2>
 
@@ -22,8 +22,7 @@ function removerSerie() {
 
         <p> {{ serie.assistida ? 'Assistida' : 'Não Assistida' }} </p>
 
-        <button @click="removerSerie"> Remover </button>
+        <button @click="removerSerie" class="btn-remover"> Remover </button>
 
-        <hr>
     </div>
 </template>
